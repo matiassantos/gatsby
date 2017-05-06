@@ -36,6 +36,7 @@ module.exports = async function onNodeCreate({
     content: data.content,
   }
   markdownNode.frontmatter = {
+    title: ``, // always include a title
     ...data.data,
     parent: node.id,
   }
